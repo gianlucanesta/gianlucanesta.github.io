@@ -26,6 +26,7 @@ a,
   transition: all 0.3s ease;
 }
 
+/* Navbar */
 nav,
 .nav-links {
   display: flex;
@@ -35,6 +36,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  position: relative;
+  z-index: 1001;
 }
 
 .nav-links {
@@ -66,7 +69,6 @@ a:hover {
 }
 
 /* Hamburger Menu */
-
 #hamburger-nav {
   display: none;
 }
@@ -95,12 +97,23 @@ a:hover {
 .menu-links {
   position: absolute;
   top: 100%;
-  right: 0;
-  background-color: f1f1f1;
-  width: fit-content;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+}
+
+.menu-links.open {
+  max-height: 300px;
+  top: 100%;
+}
+
+.menu-links li {
+  list-style: none;
 }
 
 .menu-links a {
@@ -111,14 +124,6 @@ a:hover {
   text-decoration: none;
   color: #333;
   transition: all 0.3s ease-in-out;
-}
-
-.menu-links li {
-  list-style: none;
-}
-
-.menu-links.open {
-  max-height: 300px;
 }
 
 .hamburger-icon.open span:nth-child(1) {
@@ -267,7 +272,6 @@ section {
 }
 
 /* About */
-
 #about {
   position: relative;
 }
@@ -376,7 +380,6 @@ article .icon {
 }
 
 /* Projects */
-
 #projects {
   position: relative;
 }
