@@ -295,6 +295,7 @@ section {
   right: -5rem;
   bottom: 2.5rem;
   cursor: pointer;
+  transform: translateY(50%);
 }
 
 .details-container {
@@ -326,11 +327,13 @@ section {
 /* Experience */
 #experience {
   position: relative;
+  padding-bottom: 3rem;
 }
 
 .experience-container {
-  width: 70%;
+  width: 80%;
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 .experience-sub-title {
@@ -370,4 +373,31 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
